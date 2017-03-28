@@ -1,0 +1,75 @@
+
+       /*Main body*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+body {
+    font-size: 12px;
+    font-family: 'Roboto','Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;  
+}
+
+
+       /*nav-bar*/
+
+      /*Dices and buttons and result box*/
+.wrapper {
+    width: 400px;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+}
+
+#score-card {
+    padding-left: 450px;
+}
+
+.dice {
+    width: 32px;
+    float: left;
+    background-color: #F5F5F5;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+              /*Score-board and table*/
+
+#score-title  {
+    text-align: center;
+    color: #64b5f6;
+}
+.table-title {
+     font-size: 20px;
+}
+#main-table-body td {
+    font-size: 16px;
+}
+#total {
+  font-size: 19px;
+}
+
+                    /*Rules of the game*/
+
+#rule_game {
+    color: #64b5f6;
+}
+
+                    /*Footer*/
