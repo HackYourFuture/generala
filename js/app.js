@@ -1,3 +1,8 @@
+$( document ).ready(function(){
+     $(".button-collapse").sideNav();
+});
+
+
 var straight;
 var fullHouse;
 var FourOfaKind;
@@ -33,6 +38,8 @@ window.addEventListener( 'DOMContentLoaded', function () {
         diceSide5.innerHTML = side5;
 
         status.innerHTML = 'You rolled ' + diceTotal + '.';
+        var onesPoint = document.getElementById('ones-point');
+        onesPoint.innerHTML = diceTotal;
 
         if ( side1 === side2 === side3 === side4 === side5 ) {
             status.innerHTML += ' Generalas! You get a free turn!';
@@ -46,3 +53,4 @@ window.addEventListener( 'DOMContentLoaded', function () {
     buttonRoolDice.addEventListener( 'click', rollDice, false );
 
 }, false);
+
