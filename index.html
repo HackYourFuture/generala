@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="lib/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+                   <!-- navigation bar -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Generala</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#rule_game">Rules</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+                    <!-- End navigation bar -->
+
+                    <!-- Dices, buttons and result box -->
+    <div class="wrapper row center"> 
+      <div class="column">
+          <div id="dice-side-1" class="dice">0</div>
+          <div id="dice-side-2" class="dice">0</div>
+          <div id="dice-side-3" class="dice">0</div>
+          <div id="dice-side-4" class="dice">0</div>
+          <div id="dice-side-5" class="dice">0</div>
+      </div>
+      <div class="column">
+          <button type="button" id="btn-roll" class="btn waves-effect waves-light orange">roll dice</button>
+      </div>
+    </div>
+     <div class="row" id="score-card">
+        <div class="col s12 m5">
+          <div class="card-panel teal">
+           <h6 id="status"></h6>
+          </div>
+        </div>
+      </div>
+                     <!-- End Dices, buttons and result box -->
+
+                      <!-- Score board table -->
+  <div class="container">
+    <div class="section">
+      <h3 id="score-title">Scores</h3>
+      <table class="striped">
+            <thead>
+              <tr>
+                  <th class="table-title">Category</th>
+                  <th class="table-title">Points</th>
+              </tr>
+            </thead>
+
+            <tbody id="main-table-body">
+              <tr>
+                <td>Ones</td>
+                <td id="ones-point"></td>
+              </tr>
+              <tr>
+                <td>Twos</td>
+                <td id="twos-point"></td>
+              </tr>
+              <tr>
+                <td>Threes</td>
+                <td id="threes-point"></td>
+              </tr>
+              <tr>
+                <td>Fours</td>
+                <td id="fours-point"></td>
+              </tr>
+              <tr>
+                <td>Fives</td>
+                <td id="fives-point"></td>
+              </tr>
+              <tr>
+                <td>Sixths</td>
+                <td id="sixths-point"></td>
+              </tr>
+              <tr>
+                <td>Straight</td>
+                <td id="straight-point"></td>
+              </tr>
+              <tr>
+                <td>Full House</td>
+                <td id="full-house"></td>
+              </tr>
+              <tr>
+                <td>Four of a kind</td>
+                <td id="four-kind"></td>
+              </tr>
+              <tr>
+                <td>Generala</td>
+                <td id="generala"></td>
+              </tr>
+              <tr>
+                <td>Double Generala</td>
+                <td id="double-generala"></td>
+              </tr>
+            </tbody>
+      </table>
+   
+      <div class="row">
+        <div class="col s12 m5">
+          <div class="card-panel teal">
+           <h6 id="total">Total:</h6>
+          </div>
+        </div>
+      </div>
+                        <!-- End Score-board table -->
+
+                         <!-- Rules of the game -->
+      <div class="section">
+          <ul class="collection with-header">
+            <li class="collection-header" id="rule_game"><h4>Rules</h4></li>
+            <li class="collection-item"><h6>It can be played by two or more players.</h6></li>
+            <li class="collection-item"><h6>A player may choose which dices to enroll or to keep.</h6></li>
+            <li class="collection-item"><h6>A player may reroll some or all of the dices up to three times on a turn.</h6></li>
+            <li class="collection-item"><h6>If a player makes straight, Full house or Four of a kind on the first roll of a given turn, it is worth 5 or 10 extra points.</h6></li>
+            <li class="collection-item"><h6>A player who makes Generala on the first roll of a turn qutomatically wins th game.</h6></li>
+            <li class="collection-item"><h6>A category is eliminated if a player fails to make a valid score or chooses not to take score. And he can not score on that category for the rest of the game.</h6></li>
+            <li class="collection-item"><h6>Winner of the game is the one who finishes with the most points unless one scores General of their first roll.</h6></li>
+         </ul> 
+      </div>
+    </div>
+  </div>
+                             <!-- End rules of the game -->
+
+                             <!-- Footer -->
+  <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Generala: A game for all</h5>
+                <p class="grey-text text-lighten-4">It is simple to play, just try it!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact us</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright Text
+ <!--            <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+                        <!-- End footer -->
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="lib/js/materialize.js"></script>
+
+  </body>
+</html>
