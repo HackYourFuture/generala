@@ -1,0 +1,13 @@
+/* app css stylesheet */
+
+md-card > img, md-card > md-card-header img, md-card md-card-title-media img {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 23%;
+    height: auto;
+}
