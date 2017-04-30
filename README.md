@@ -1,3 +1,5 @@
+[![wercker status](https://app.wercker.com/status/28d30a7502dfe52c4b1610aef1c34a5f/s/master "wercker status")](https://app.wercker.com/project/byKey/28d30a7502dfe52c4b1610aef1c34a5f)
+
 # Generala
 
 For information about the project please head to [the wiki](https://github.com/HackYourFuture/generala/wiki)
