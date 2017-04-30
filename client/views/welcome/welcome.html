@@ -1,0 +1,74 @@
+<div class="row">
+    
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">Welcome to Generala Game</h2>
+    </div>
+  
+
+
+
+<div ng-controller="WelcomeCtrl" ng-cloak>
+  <md-content>
+ <md-button href="#!/game" class="md-raised md-primary">Start the game</md-button>
+     </div>
+   
+
+
+                              <!-- Rules of the game -->
+<div ng-controller="WelcomeCtrl" layout="column" ng-cloak>
+  
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">Rules</h2>
+    </div>
+  
+ <ul>
+	<li ><p>It can be played by two or more players.</p></li>
+	            <li ><p>A player may choose which dices to enroll or to keep.</p></li>
+	            <li ><p>A player may reroll some or all of the dices up to three times on a turn.</p></li>
+	            <li ><p>If a player makes straight, Full house or Four of a kind on the first roll of a given turn, it is worth 5 or 10 extra points.</p></li>
+	            <li ><p>A player who makes Generala on the first roll of a turn qutomatically wins th game.</p></li>
+	            <li ><p>A category is eliminated if a player fails to make a valid score or chooses not to take score. And he can not score on that category for the rest of the game.</p></li>
+	            <li><p>Winner of the game is the one who finishes with the most points unless one scores General of their first roll.</p></li>
+	 </ul>
+
+
+
+</div>
+
+                             <!-- End rules of the game -->
+                             </div>
+
+
+        <div ng-controller="WelcomeCtrl" ng-cloak>
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+ 
+      <md-card>
+        <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Game Rules</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+         <ul>
+	<li ><p>It can be played by two or more players.</p></li>
+	            <li ><p>A player may choose which dices to enroll or to keep.</p></li>
+	            <li ><p>A player may reroll some or all of the dices up to three times on a turn.</p></li>
+	            <li ><p>If a player makes straight, Full house or Four of a kind on the first roll of a given turn, it is worth 5 or 10 extra points.</p></li>
+	            <li ><p>A player who makes Generala on the first roll of a turn qutomatically wins th game.</p></li>
+	            <li ><p>A category is eliminated if a player fails to make a valid score or chooses not to take score. And he can not score on that category for the rest of the game.</p></li>
+	            <li><p>Winner of the game is the one who finishes with the most points unless one scores General of their first roll.</p></li>
+	 </ul>
+        </md-card-content>
+        <md-card-actions layout="column" layout-align="start">
+          <md-button  href="#!/game">Start Game </md-button>
+          <md-button>Join Game</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+   
+
+    </div>
+  </md-content>
+</div>
