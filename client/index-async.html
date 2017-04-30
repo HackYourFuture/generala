@@ -1,15 +1,17 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="generalaApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="generalaApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="generalaApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="generalaApp"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generala App</title>
+  <link rel="stylesheet" href="./generala-client.min.css">
     [ng-cloak] {
       display: none;
     }
   </style>
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script>
     // include angular loader, which allows the files to load in any order
     //@@NG_LOADER_START@@
@@ -28,31 +30,16 @@
 
     // load all of the dependencies asynchronously.
     $script([
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'app.js',
-      'start/start.js',
-      /*'view2/view2.js',
-      'components/version/version.js',
-      'components/version/version-directive.js',
-      'components/version/interpolate-filter.js'*/
+      './generala-client.min.js'
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['generalaApp']);
     });
   </script>
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="app.css">
 </head>
 <body ng-cloak>
-  <ul class="menu">
-    <li><a href="/start">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
 </body>
 </html>
