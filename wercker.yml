@@ -4,10 +4,10 @@ build:
   steps:
     - npm-install
     - script:
-    name: install dependencies
-    code: |
-      npm install -g bower@1.3.12
-      bower install --allow-root
+      name: install dependencies
+      code: |
+        npm install -g bower@1.3.12
+        bower install --allow-root
 
 deploy:
   steps:
