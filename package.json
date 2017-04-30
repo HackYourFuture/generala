@@ -14,13 +14,18 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
-    "protractor": "^4.0.9"
+    "postcss": "^5.2.17",
+    "postcss-cli": "^3.2.0",
+    "protractor": "^4.0.9",
+    "uglify-js": "^2.8.22"
   },
   "scripts": {
     "postinstall": "bower install",
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
     "prestart": "npm install",
+    "build-js": "uglifyjs -c -m -- client/**/*.js > dist/generala-client.min.js",
+    "build-css": "./node_modules/postcss-cli/bin/postcss -o dist/generala-client.min.css client/**/*.css",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",

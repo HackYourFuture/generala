@@ -1,0 +1,14 @@
+/* app css stylesheet */
+
+md-card > img, md-card > md-card-header img, md-card md-card-title-media img {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 23%;
+    height: auto;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2NsaWVudC9hcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHdCQUF3Qjs7QUFFeEI7SUFDSSx1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2Qsb0JBQW9CO0lBQ3BCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YsV0FBVztJQUNYLGFBQWE7Q0FDaEIiLCJmaWxlIjoiZ2VuZXJhbGEtY2xpZW50Lm1pbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBhcHAgY3NzIHN0eWxlc2hlZXQgKi9cblxubWQtY2FyZCA+IGltZywgbWQtY2FyZCA+IG1kLWNhcmQtaGVhZGVyIGltZywgbWQtY2FyZCBtZC1jYXJkLXRpdGxlLW1lZGlhIGltZyB7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWZsZXg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAtd2Via2l0LWJveC1mbGV4OiAwO1xuICAgIC13ZWJraXQtZmxleDogMCAwIGF1dG87XG4gICAgZmxleDogMCAwIGF1dG87XG4gICAgd2lkdGg6IDIzJTtcbiAgICBoZWlnaHQ6IGF1dG87XG59Il19 */
