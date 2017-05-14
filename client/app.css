@@ -1,6 +1,6 @@
 /* app css stylesheet */
 
-md-card > img, md-card > md-card-header img, md-card md-card-title-media img {
+.dice-img {
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
