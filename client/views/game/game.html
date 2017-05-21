@@ -9,7 +9,7 @@
 
  <md-content class="md-padding" layout-xs="column" layout="row">
 
-  <div flex-xs flex-gt-xs="20" layout="column">
+  <div flex-xs flex-gt-xs="25" layout="column">
     <md-card >
       <md-card-title>
         <md-card-title-text>
@@ -26,32 +26,14 @@
       </md-card-actions>
     </md-card>
   </div>
+<div layout="column" flex-xs flex-gt-xs="50">
+<throw-dice player="player1" flex>
+</throw-dice>
 
-  <div flex-xs flex-gt-xs="50" layout="column">
-    <md-card >
-        <xs-card-title>
-          <xs-card-title-text>
-            <span>Game</span>
-          </xs-card-title-text>
-        </xs-card-title>
-        <xs-card-title-media>
-          <div class="md-media-md card-media">
-             <img ng-src="{{dice1}}">
-             <img ng-src="{{dice2}}">
-             <img ng-src="{{dice3}}">
-             <img ng-src="{{dice4}}">
-             <img ng-src="{{dice5}}">
-          </div>
-        </xs-card-title-media>
-
-        <xs-card-actions layout="row" layout-align="end center">
-          <md-button ng-click="throwDice()">Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </xs-card-actions>
-      </md-card>
-    </div>
-
-    <div flex-xs flex-gt-xs="20" layout="column">
+<throw-dice player="player2" flex>
+</throw-dice>
+</div>
+    <div flex-xs flex-gt-xs="25" layout="column">
       <md-card >
         <md-card-title>
           <md-card-title-text>

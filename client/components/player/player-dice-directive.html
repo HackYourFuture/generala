@@ -1,0 +1,23 @@
+  <div layout="column">
+    <md-card >
+        <xs-card-title>
+          <xs-card-title-text>
+            <span>Game</span>
+          </xs-card-title-text>
+        </xs-card-title>
+        <xs-card-title-media>
+          <div class="md-media-md card-media">
+             <img ng-src="{{player.dice1}}">
+             <img ng-src="{{player.dice2}}">
+             <img ng-src="{{player.dice3}}">
+             <img ng-src="{{player.dice4}}">
+             <img ng-src="{{player.dice5}}">
+          </div>
+        </xs-card-title-media>
+
+        <xs-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="throwDice()">Throw Dice</md-button>
+          <md-button>Action 2</md-button>
+        </xs-card-actions>
+      </md-card>
+    </div>
