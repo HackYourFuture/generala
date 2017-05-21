@@ -23,7 +23,7 @@ angular.module('generalaApp.game', [
   $scope.dice5 = 'views/game/img/dice5.png';
 
   $scope.throwDice = function (){
-    console.log("hello");
+
     for (var i = 1; i < 6; i++){
       $scope['dice' + i] = 'views/game/img/dice' + (Math.floor( Math.random() * 6 ) + 1).toString() + '.png';
     }
