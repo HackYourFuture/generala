@@ -27,6 +27,7 @@
     "build": "npm run build-js && npm run build-css",
     "build-js": "uglifyjs -c -o dist/generala-client.min.js -- bower_components/angular/angular.js bower_components/angular-route/angular-route.js bower_components/angular-aria/angular-aria.js bower_components/angular-animate/angular-animate.js bower_components/angular-material/angular-material.js client/**/*.js",
     "build-css": "cat bower_components/angular-material/angular-material.css client/app.css | ./node_modules/postcss-cli/bin/postcss -o dist/generala-client.min.css",
+    // "start": "http-server -a localhost -p 8000 -c-1 ./client",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",

@@ -13,4 +13,3 @@
 
 		  $routeProvider.otherwise({redirectTo: '/welcome'});
 		}]);
-s
