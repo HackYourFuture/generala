@@ -2,6 +2,8 @@
 
 # Generala
 
+[Generala App Live!](https://hackyourfuture.github.io/generala/#!/welcome)
+
 For information about the project please head to [the wiki](https://github.com/HackYourFuture/generala/wiki)
 
 Based on `angular-seed` — the seed for AngularJS apps
