@@ -1,0 +1,63 @@
+ <div ng-controller="GameCtrl" ng-cloak>
+  <div  class="row">
+    <md-content>
+       <md-button href="#!.welcome/welcome.html"  class="md-raised">Go back </md-button>
+    </md-content>
+  </div>
+
+
+
+ <md-content class="md-padding" layout-xs="column" layout="row">
+
+  <div flex-xs flex-gt-xs="25" layout="column">
+    <md-card >
+      <md-card-title>
+        <md-card-title-text>
+          <player name="Player 1"></player>
+          <span class="md-subhead">write ..</span>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="md-media-lg card-media"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+<div layout="column" flex-xs flex-gt-xs="50">
+<throw-dice player="player1" flex>
+</throw-dice>
+
+<throw-dice player="player2" flex>
+</throw-dice>
+</div>
+    <div flex-xs flex-gt-xs="25" layout="column">
+      <md-card >
+        <md-card-title>
+          <md-card-title-text>
+            <player name="Player 2"></player>
+            <span class="md-subhead">write ..</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+  </md-content>
+ </div>
+
+
+
+
+
+
+
